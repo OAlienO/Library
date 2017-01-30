@@ -1,0 +1,76 @@
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
+body {
+	font-family: 'cwTeXhei', serif;
+	margin: 0;
+}
+
+.materialize {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+	border-radius: 0;
+}
+
+.de-radius {
+	border-radius: 0 !important;
+}
+
+.center-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #D8F781;
+}
+
+.envelope-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 400px;
+	height: 250px;
+}
+
+.envelope-body {
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	background-color: #0431B4;
+	top: 50px;
+}
+
+.envelope-body:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 125px 200px 125px 200px;
+	border-color: transparent transparent #0431B4 transparent;
+	top: -250px;
+}
+
+.envelope-body:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 125px 200px 125px 200px;
+	border-color: transparent #00BFFF #01DFD7 #01DFD7;
+	z-index: 1;
+}
+
+.envelope-paper {
+	position: absolute;
+	display: flex;
+	flex-flow: column;
+	width: 350px;
+	height: 300px;
+	background-color: white;
+	top: -125px;
+}
+
+.username,.password {
+	margin: 20px 20px 0 20px;
+	flex-grow: 1;
+}
