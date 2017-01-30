@@ -1,0 +1,56 @@
+.wrapper {
+	padding: 0;
+}
+
+.trapezoid {
+	display: flex;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.left-trapezoid {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.left-background {
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 115%;
+	left: -15%;
+	background-color: deepskyblue;
+	transform: skewX(10deg);
+}
+.left-content-wrapper {
+	z-index: 2;
+	font-size: 100px;
+	font-family: 微軟正黑體;
+	color: white;
+}
+
+.right-trapezoid {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.right-background {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 115%;
+	right: -15%;
+	background-color: tomato;
+	transform: skewX(10deg);
+}
+.right-content-wrapper {
+	z-index: 2;
+	font-size: 100px;
+	font-family: 微軟正黑體;
+	color: white;
+}
