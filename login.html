@@ -3,24 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Compiled and minified materialize CSS -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="center-wrapper">
 		<div class="envelope-wrapper">
 			<div class="envelope-body materialize"></div>
 			<div class="envelope-paper materialize">
-				<div class="input-group username">
-				  <span class="input-group-addon de-radius">username</span>
-				  <input type="text" class="form-control de-radius" aria-label="Amount (to the nearest dollar)">
-				</div>
-				<div class="input-group password">
-				  <span class="input-group-addon de-radius">password</span>
-				  <input type="text" class="form-control de-radius" aria-label="Amount (to the nearest dollar)">
-				</div>
+        	    <div class="row">
+			    	<form class="col s12">
+				        <div class="input-field username">
+				          	<input type="password" class="validate">
+				          	<label>Username</label>
+				        </div>
+				        <div class="input-field password">
+				          	<input type="password" class="validate">
+				          	<label>Password</label>
+				        </div>
+				    	<div class="submit"><a class="waves-effect waves-light btn">submit</a></div>
+			    	</form>
+			    </div>
 			</div>
 		</div>
 	</div>
+	<!-- Compiled and minified jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<!-- Compiled and minified materialize js -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>      
 </body>
 </html>
